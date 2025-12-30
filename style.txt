@@ -1,0 +1,22 @@
+QPushButton {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+QPushButton:pressed {
+    color: #dddddd;
+}
+
+QLineEdit {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 12px;
+}
+
+QLineEdit:focus {
+    outline: none;
+}
