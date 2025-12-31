@@ -122,7 +122,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="res.qrc">:/images/logo.png</pixmap>
+     <pixmap>:/images/logo.png</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="closeWindow">

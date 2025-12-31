@@ -21,6 +21,9 @@ add_executable(nwpu_gamedev_2025_launcher
         mainwindow.ui
         res.qrc
         UpdateToml.cpp
+        settingswindow.cpp
+        settingswindow.h
+        settingswindow.ui
 )
 
 target_link_libraries(nwpu_gamedev_2025_launcher

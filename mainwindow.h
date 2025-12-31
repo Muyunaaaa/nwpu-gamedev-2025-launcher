@@ -7,6 +7,8 @@
 
 #include <QMainWindow>
 #include <QProcess>
+#include "settingswindow.h" // 包含设置窗口头文件
+
 
 
 QT_BEGIN_NAMESPACE
@@ -29,6 +31,8 @@ private:
     Ui::MainWindow *ui;
     QPoint m_dragPosition;
     QProcess* gameProcess = nullptr;
+    SettingsWindow *sWindow = nullptr;
+
 
 private slots:
     void on_closeWindow_clicked();

@@ -8,6 +8,8 @@
 #include <QDir>
 #include <QTimer>
 
+#include "settingswindow.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent), ui(new Ui::MainWindow)
 {
@@ -63,6 +65,7 @@ void MainWindow::on_launch_clicked()
         updateServerIP(host);
         updateServerPort(serverPort);
     }
+
     catch (...) {
         QMessageBox::critical(this, "错误", "写入配置文件失败");
         return;
@@ -73,7 +76,21 @@ void MainWindow::on_launch_clicked()
 
 void MainWindow::on_settings_clicked()
 {
-    QMessageBox::information(this, "提示", "设置界面尚未实现");
+    if (!sWindow) {
+        sWindow = new SettingsWindow(this);
+    }
+
+    sWindow->adjustSize();
+
+    sWindow->setWindowFlags(Qt::Window);
+
+    int x = this->geometry().x() + (this->width() - sWindow->width()) / 2;
+    int y = this->geometry().y() + (this->height() - sWindow->height()) / 2;
+
+    sWindow->move(x, y);
+    sWindow->show();
+    sWindow->raise();
+    sWindow->activateWindow();
 }
 
 void MainWindow::on_closeWindow_clicked()
