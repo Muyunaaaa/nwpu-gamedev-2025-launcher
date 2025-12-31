@@ -14,6 +14,9 @@ find_package(Qt6 COMPONENTS
   Widgets
   REQUIRED)
 
+
+
+
 add_executable(nwpu_gamedev_2025_launcher
         main.cpp
         mainwindow.cpp
@@ -31,6 +34,8 @@ target_link_libraries(nwpu_gamedev_2025_launcher
   Qt::Gui
   Qt::Widgets
 )
+
+target_sources(nwpu_gamedev_2025_launcher PRIVATE app.rc)
 
 if (WIN32 AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
     set(DEBUG_SUFFIX)

@@ -104,10 +104,10 @@
    <widget class="QLabel" name="logo">
     <property name="geometry">
      <rect>
-      <x>1140</x>
-      <y>100</y>
-      <width>120</width>
-      <height>120</height>
+      <x>1100</x>
+      <y>70</y>
+      <width>191</width>
+      <height>191</height>
      </rect>
     </property>
     <property name="autoFillBackground">
@@ -122,7 +122,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>:/images/logo.png</pixmap>
+     <pixmap resource="res.qrc">:/images/logo.png</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="closeWindow">
