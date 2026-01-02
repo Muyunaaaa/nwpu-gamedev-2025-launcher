@@ -14,12 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget {
-    background-image: url(:/images/background.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="editUserName">
@@ -101,30 +96,6 @@
      <string>端口</string>
     </property>
    </widget>
-   <widget class="QLabel" name="logo">
-    <property name="geometry">
-     <rect>
-      <x>1100</x>
-      <y>70</y>
-      <width>191</width>
-      <height>191</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel#logoLabel {
-    background-color: transparent;
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="res.qrc">:/images/logo.png</pixmap>
-    </property>
-   </widget>
    <widget class="QPushButton" name="closeWindow">
     <property name="geometry">
      <rect>
@@ -155,6 +126,22 @@
     </property>
     <property name="icon">
      <iconset theme="QIcon::ThemeIcon::ListRemove"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>70</y>
+      <width>221</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="res.qrc">:/images/logo.png</pixmap>
     </property>
    </widget>
   </widget>
